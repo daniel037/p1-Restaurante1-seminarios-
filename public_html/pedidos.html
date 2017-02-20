@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Restaurante la Esquina</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/estilo1.css" rel="stylesheet">      
+    </head>
+    
+    <body> 
+        <h1>Restaurante la Esquina</h1>
+        <h2>Calle 22 No 1-16 - Pasto (Nariño)</h2>
+        <hr>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="platos.html"> Platos</a>
+            <a href="pedidos.html"> Pedios</a>
+            <a href="#2"> Sucursales</a>          
+        </nav>>   
+        
+        <h2>Registre su pedido</h2>
+        <form id="frmPedido">
+            <label> Cedula </label>
+            <input type="number" min="0" name="txtced" required class="entradas"> <br>
+            <label> Nombre cliente </label>
+            <input type="text" name="txtnom" required maxlength="30" class="entradas"> <br>   
+            <label> E-mail </label>
+            <input type="email" name="txte-mail" required class="entradas"> <br>  
+            <label> Direccion </label>
+            <input type="text" name="txtdir" required class="entradas"> <br>
+            <label> Fecha de Registro </label>
+            <input type="date" name="txtfecha" class="entradas"> <br>
+            
+            <label> Plato fuerte </label>
+            <input type="number" min="0" max="100" step="2" name="txtc1" required class="entradas">
+            <select name="lstpf">
+                <option value="1"> Tilapia azada </option>
+                <option value="2"> Churrasco </option>
+                <option value="3"> costillas bbq </option>
+                <option value="4"> pollo al horno </option>
+            </select><br>    
+            
+            <label> Acompañamientos </label>
+            <input type="number" min="0" max="100" step="2" name="txtc2" required class="entradas">
+            <select name="lstacom">
+                <option value="1"> Ensalada de verduras </option>
+                <option value="2"> Ensalada de papas </option>
+                <option value="3"> Patacones </option>
+                <option value="4"> Risotto de tomates </option>
+            </select><br> 
+            
+            <label> Postres </label>
+            <input type="number" min="0" max="100" step="2" name="txtc3" required class="entradas">
+            <select name="lstpos">
+                <option value="1"> Helado de moras y queso </option>
+                <option value="2"> Brownie </option>
+                <option value="3"> chocolate blanco </option>
+                <option value="4"> pie de limon </option>
+            </select><br> 
+            
+            <label> Forma de pago </label><br>
+            Efectivo<input type="radio" name="optfor" value="E" checked><br>
+            T.Debito<input type="radio" name="optfor" value="d"><br>
+            T.Credito<input type="radio" name="optfor" value="C"><br>
+            
+            <label> Incluir salsas? </label>
+            <input type="checkbox" name="chksal" class="entradas"><br>
+
+            <hr>
+            <input type="submit" value="Solicitar pedido">
+            <input type="reset" value="Limpiar">
+            
+        </form>
+       
+    </body>
+</html>
